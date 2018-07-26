@@ -51,6 +51,9 @@ app.get('/',(req, res)=>{
     });
 });
 
+app.get('/portfolio',(req, res)=>{
+    res.render('portfolio.hbs');
+});
 
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`);
